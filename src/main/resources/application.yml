@@ -1,0 +1,14 @@
+server:
+  port: 8083
+
+aws:
+  accessKeyId: ENC(KLAVWh3QwxspSLP8CyX1G5Py3bMP0MtCx3JvFFEV+g8=)
+  secretKey: ENC(ttYuODlXk91NzsHQlt0oDKycepn3raa3/jcuzbFGMi2GQnzxmMVI54nm/jAHXuoCPM8Ky1OR+lM=)
+  region: ap-south-1
+  s3Bucket-ums: af-ums
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
